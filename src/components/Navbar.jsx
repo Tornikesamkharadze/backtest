@@ -133,7 +133,7 @@ const Navbar = () => {
           <Person />
         ) : (
           <img
-            src={`http://localhost:3001/${user.profileImagePath.replace(
+            src={`https://backtest-z5no.onrender.com/${user.profileImagePath.replace(
               "public",
               ""
             )}`}

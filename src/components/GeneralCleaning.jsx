@@ -78,7 +78,7 @@ const GeneralCleaning = () => {
     e.preventDefault();
     try {
       // Use the userId obtained from Redux store
-      await fetch("http://localhost:3001/auth/order", {
+      await fetch("https://backtest-z5no.onrender.com/auth/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

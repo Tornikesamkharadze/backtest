@@ -78,7 +78,7 @@ const StandartClean = () => {
     e.preventDefault();
     try {
       // Use the userId obtained from Redux store
-      await fetch("http://localhost:3001/auth/order", {
+      await fetch("https://backtest-z5no.onrender.com/auth/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -273,13 +273,12 @@ const ContentWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   form {
     max-width: 760px;
     width: 100%;
     padding: 0px 30px;
     margin-bottom: 50px;
-   
   }
 `;
 

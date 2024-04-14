@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../styles/Login.scss"
-import { useDispatch } from "react-redux"
+import "../styles/Login.scss";
+import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { setLogin } from "../redux/state";
-import toast from 'react-hot-toast'; // Import toast from react-hot-toast
+import toast from "react-hot-toast"; // Import toast from react-hot-toast
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -16,13 +16,16 @@ const LoginPage = () => {
 
     try {
       // Send login request to the server
-      const response = await fetch("http://localhost:3001/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ email, password })
-      });
+      const response = await fetch(
+        "https://backtest-z5no.onrender.com/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
 
       // Check if login request was successful
       if (!response.ok) {
@@ -40,18 +43,17 @@ const LoginPage = () => {
         dispatch(
           setLogin({
             user: loggedIn.user,
-            token: loggedIn.token
+            token: loggedIn.token,
           })
         );
         navigate("/");
         // Display success toast message
         toast.success("You are logged in");
       }
-
     } catch (err) {
       console.log("Login failed", err.message);
     }
-  }
+  };
 
   return (
     <div className="login">
