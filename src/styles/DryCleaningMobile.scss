@@ -7,7 +7,7 @@
   border-radius: 10px;
   @include shadow;
   .slider-container {
-    width: 300px;
+    width: 100%; /* Adjust width as needed */
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -20,14 +20,13 @@
         position: relative;
         flex: 0 0 100%;
         width: 100%;
-        height: 270px;
+        height: auto; /* Adjust height to auto */
         display: flex;
-        align-items: center;
-        min-height: 500px;
         flex-direction: column;
+
         img {
           width: 100%;
-          height: 100%;
+          height: auto; /* Adjust height to auto */
           filter: brightness(85%);
         }
 
@@ -63,29 +62,14 @@
   }
 
   .service {
-    font-size: 18px;
+    font-size: 2.9vw; /* Responsive font size */
     color: #24355a;
   }
 
   p {
-    font-size: 16px;
+    font-size: 2.5vw; /* Responsive font size */
   }
 
-  span {
-    font-weight: 700;
-    font-size: 18px;
-  }
-
-  .favorite {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 999;
-    background: none;
-  }
   .crft_btn {
     text-decoration: none;
     color: rgb(69, 142, 240);
