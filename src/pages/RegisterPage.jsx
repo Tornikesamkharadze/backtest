@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import "../styles/Register.scss";
 
@@ -150,7 +150,7 @@ const RegisterPage = () => {
             რეგისტრაცია
           </button>
         </form>
-        <a href="/login">გაქვთ ანგარიში? შესვლა </a>
+        <Link to="/login">გაქვთ ანგარიში? შესვლა </Link>
       </div>
     </div>
   );
