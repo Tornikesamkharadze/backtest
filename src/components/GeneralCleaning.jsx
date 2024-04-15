@@ -19,7 +19,7 @@ const GeneralCleaning = () => {
     phoneNumber: "",
     date: "", // Add date field to the state
     quantity: "30",
-    price: "80",
+    price: "150",
     time: "",
     address: "",
     category: "გენერალური დასუფთავება",
