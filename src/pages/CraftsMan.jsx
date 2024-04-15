@@ -104,7 +104,7 @@ const GeneralCleaning = () => {
       <TitleWrapper>
         <img src={craftsman} alt="craftsman" />
         <p>CLEAN SERVICE</p>
-        <h1>{orderData.category}</h1>
+        <h1>ხელოსნის გამოძახება</h1>
       </TitleWrapper>
       <ContentWrapper>
         <form onSubmit={handleSubmit}>

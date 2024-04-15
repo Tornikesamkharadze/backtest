@@ -118,7 +118,7 @@ const GeneralCleaning = () => {
       <TitleWrapper>
         <img src={generalSoap} alt="soap" />
         <p>CLEAN SERVICE</p>
-        <h1>{orderData.category}</h1>
+        <h1>გენერალური დასუფთავება</h1>
       </TitleWrapper>
       <ContentWrapper>
         <form onSubmit={handleSubmit}>

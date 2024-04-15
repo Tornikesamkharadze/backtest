@@ -15,7 +15,7 @@ const UserOrders = () => {
           userInfo.orders.map((order, index) => (
             <div key={index} className="user-order">
               <div className="order-details">
-                <h1 className="title">კატეგორია: {order.category}</h1>
+                <h1 className="title">{order.category}</h1>
                 <p>
                   <span className="list">სახელი:</span> {order.firstName}
                 </p>
