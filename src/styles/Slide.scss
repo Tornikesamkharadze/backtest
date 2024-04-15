@@ -26,6 +26,9 @@ h3 {
 }
 
 @media screen and (max-width: 1000px) {
+  .slide {
+    min-height: 450px;;
+  }
 
   h1, h5, h6 {
     font-size: 6vw;

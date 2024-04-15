@@ -5,7 +5,7 @@ import { Link as RouterLink, useNavigate } from "react-router-dom";
 import "../styles/Navbar.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { setLogout } from "../redux/state";
-
+import navLogo from "../../public/assets/logo.png";
 const Navbar = () => {
   const [dropdownMenu, setDropdownMenu] = useState(false);
   const user = useSelector((state) => state.user);
@@ -67,7 +67,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <RouterLink to="/">
-        <img src="../../public/assets/logo.png" alt="logo" />
+        <img src={navLogo} alt="logo" />
       </RouterLink>
       <div className="navbar_right">
         {!user ? (
