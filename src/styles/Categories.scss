@@ -8,9 +8,6 @@
   align-items: center;
   background-color: rgb(238, 238, 238);
   cursor: default;
-  @include sm {
-    padding: 50px 20px;
-  }
 
   h1 {
     text-align: center;
@@ -19,23 +16,28 @@
     font-weight: 800;
     margin-bottom: 15px;
   }
+
   h3 {
     color: rgb(69, 142, 240);
     padding-bottom: 20px;
   }
+
   #title {
     text-align: center;
     padding-bottom: 50px;
   }
+
   p {
     max-width: 700px;
     font-size: 20px;
     color: $blue;
   }
+
   .details {
     color: rgb(69, 142, 240);
     font-size: 40px;
   }
+
   .categories_list {
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +91,33 @@
           height: 80%;
         }
       }
+    }
+  }
+}
+
+// Desktop styles
+@media (max-width: 1000px) {
+  .categories {
+    padding: 50px 20px;
+
+    h1 {
+      font-size: 32px; // Adjust font size for smaller screens
+    }
+
+    h3 {
+      font-size: 20px; // Adjust font size for smaller screens
+    }
+
+    #title {
+      font-size: 20px; // Adjust font size for smaller screens
+    }
+
+    p {
+      font-size: 16px; // Adjust font size for smaller screens
+    }
+
+    .details {
+      font-size: 32px; // Adjust font size for smaller screens
     }
   }
 }
