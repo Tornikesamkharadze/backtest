@@ -21,7 +21,7 @@ const RegisterPage = () => {
         formData.confirmPassword === ""
     );
   });
-
+console.log(formData)
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     setFormData({
