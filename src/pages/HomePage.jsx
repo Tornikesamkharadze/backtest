@@ -7,7 +7,6 @@ import SocialPages from "../components/SocialPages";
 const HomePage = () => {
   return (
     <>
-      <h1>tornike</h1>
       <Slide />
       <Categories />
       <Contact />
